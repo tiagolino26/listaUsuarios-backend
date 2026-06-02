@@ -16,7 +16,7 @@ const usersRepository = {
   async put(name, idade, email, id) {
     return await sql`UPDATE users SET name = ${name},
                                             idade = ${idade},
-                                            email = ${email},
+                                            email = ${email}
                                             WHERE id = ${id};`;
   },
 
